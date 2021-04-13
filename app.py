@@ -11,7 +11,7 @@ if 'IS_HEROKU' in os.environ:
 if is_heroku == True:
     # if IS_HEROKU is found in the environment variables, then use the rest
     # NOTE: you still need to set up the IS_HEROKU environment variable on Heroku (it is not there by default)
-    API_kEY = os.environ.get('API_KEY')
+    API_KEY = os.environ.get('API_KEY')
 else:
     # use the config.py file if IS_HEROKU is not detected
     from config import API_KEY
