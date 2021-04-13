@@ -24,7 +24,7 @@ var myMap = L.map("mapid", {
     center: [
     37.09, -95.71
     ],
-    zoom: 5,
+    zoom: 4,
     layers: streetmap
 });
 // Define a baseMaps object to hold our base layers
@@ -120,8 +120,8 @@ d3.json(tectonicPlateUrl).then(data => {
     // style function
     function styleInfo(feature) {
         return {
-            fillColor: "#CACBC4",
-            color: "#CACBC4",
+            fillColor: "#F7DC6F",
+            color: "#F7DC6F",
             stroke: true,
             weight: 2
         }
