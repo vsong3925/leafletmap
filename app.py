@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import json
 from flask import Flask, render_template, jsonify, request
+import re
 
 is_heroku = False
 if 'IS_HEROKU' in os.environ:
